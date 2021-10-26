@@ -1,0 +1,12 @@
+{
+  "name": "web3cocos",
+  "version": "0.1.0",
+  "description": "A web3.js port for cocos creator 3",
+  "main": "web3.cjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Chan",
+  "license": "ISC",
+  "types": "./types/web3/types/index.d.ts"
+}
