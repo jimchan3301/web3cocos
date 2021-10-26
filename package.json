@@ -8,5 +8,5 @@
   },
   "author": "Jim Chan",
   "license": "ISC",
-  "types": "./types/web3/types/index.d.ts"
+  "types": "./types/web3/index.d.ts"
 }
