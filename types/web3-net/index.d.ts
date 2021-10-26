@@ -17,26 +17,6 @@
  * @date 2018
  */
 
-import { AbiInput, AbiItem } from 'web3-utils';
+import { NetworkBase } from '../web3-core';
 
-export class AbiCoder {
-    encodeFunctionSignature(functionName: string | AbiItem): string;
-
-    encodeEventSignature(functionName: string | AbiItem): string;
-
-    encodeParameter(type: any, parameter: any): string;
-
-    encodeParameters(types: any[], paramaters: any[]): string;
-
-    encodeFunctionCall(abiItem: AbiItem, params: string[]): string;
-
-    decodeParameter(type: any, hex: string): { [key: string]: any };
-
-    decodeParameters(types: any[], hex: string): { [key: string]: any };
-
-    decodeLog(
-        inputs: AbiInput[],
-        hex: string,
-        topics: string[]
-    ): { [key: string]: string };
-}
+export class Network extends NetworkBase { }

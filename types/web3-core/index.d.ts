@@ -27,8 +27,8 @@ import {
     WebsocketProviderOptions,
     JsonRpcPayload,
     JsonRpcResponse
-} from 'web3-core-helpers';
-import { Method } from 'web3-core-method';
+} from '../web3-core-helpers';
+import { Method } from '../web3-core-method';
 import BN = require('bn.js');
 import BigNumber from 'bignumber.js';
 
@@ -225,7 +225,7 @@ export interface EventLog {
     transactionHash: string;
     blockHash: string;
     blockNumber: number;
-    raw?: {data: string; topics: any[]};
+    raw?: { data: string; topics: any[] };
 }
 
 export interface Log {
@@ -370,7 +370,7 @@ export interface EncryptedKeystoreV3Json {
     address: string;
     crypto: {
         ciphertext: string;
-        cipherparams: {iv: string};
+        cipherparams: { iv: string };
         cipher: string;
         kdf: string;
         kdfparams: {
@@ -441,7 +441,7 @@ export interface AbstractProvider {
     send?(payload: JsonRpcPayload, callback: (error: Error | null, result?: JsonRpcResponse) => void): void;
     request?(args: RequestArguments): Promise<any>;
     connected?: boolean;
-  }
+}
 
 export type provider =
     | HttpProvider
