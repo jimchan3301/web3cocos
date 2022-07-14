@@ -441,6 +441,7 @@ export interface AbstractProvider {
     send?(payload: JsonRpcPayload, callback: (error: Error | null, result?: JsonRpcResponse) => void): void;
     request?(args: RequestArguments): Promise<any>;
     connected?: boolean;
+    on?(eventName:string,callback:Function):void;
 }
 
 export type provider =
